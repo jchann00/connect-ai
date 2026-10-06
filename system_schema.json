@@ -1,16 +1,19 @@
 {
-  "schema_name": "ConnectAI_AgentSystemSchema",
+  "schema_name": "MonologStudio_AgentSystemSchema",
   "version": "1.0.0",
-  "description": "A comprehensive JSON schema defining the operational state, capabilities, and configuration of the Connect AI agent.",
+  "description": "A comprehensive JSON schema defining the operational state, capabilities, and configuration of the Monolog Studio AI 1-Person Enterprise.",
   "agent_identity": {
-    "name": "Connect AI",
-    "role": "Agentic AI Coding Assistant",
-    "core_principle": "100% Local · 100% Offline · 100% Free"
+    "name": "Monolog Studio Agent Team",
+    "organization": "Monolog Studio",
+    "founder": "jcan",
+    "lead_engineer": "코다리 (Senior Fullstack Engineer)",
+    "role": "Autonomous Software Builder & 1-Person Enterprise",
+    "core_principle": "100% Local Inference · 100% Offline · 100% Autonomous"
   },
   "environment": {
-    "workspace_path": "/Users/jay/로컬테스트/local-ai-coder",
+    "workspace_path": "c:/Users/jchan/Documents/ai/1인기업",
     "file_system_access": "Direct, offline access to the local file system via agent actions.",
-    "context_source": "Local workspace files and optional GitHub knowledge base."
+    "context_source": "Local workspace files, _company directory, and GitHub repository (https://github.com/jchann00/connect-ai.git)."
   },
   "agent_capabilities": [
     {
@@ -35,40 +38,29 @@
     },
     {
       "action": "RUN_TERMINAL_COMMAND",
-      "description": "Executes CLI commands (e.g., npm install, node)."
+      "description": "Executes CLI commands (e.g., npm install, node, git, ollama)."
     },
     {
       "action": "READ_BRAIN",
-      "description": "Queries the personal knowledge base (Second Brain) from a linked repository."
-      // Note: Reading URLs is also available as an action if needed.
+      "description": "Queries the personal knowledge base (Second Brain) and company memory (_company/_shared)."
     }
   ],
   "configuration": {
     "engine_options": {
-      "default_model": "gemma4:e2b",
+      "preferred_engine": "Ollama",
+      "default_model": "qwen2.5-coder:7b",
       "ollama_url": "http://127.0.0.1:11434"
     },
     "operational_settings": {
-      "temperature": 0.7,
+      "temperature": 0.6,
       "top_p": 0.9,
       "top_k": 40,
       "request_timeout_seconds": 300,
       "max_context_files": 200
     },
     "knowledge_base": {
-      "second_brain_repo_url": "",
-      "data_location": "~/.connect-ai-brain/"
+      "second_brain_repo_url": "https://github.com/jchann00/connect-ai.git",
+      "data_location": "_company/"
     }
-  },
-  "workspace_snapshot": {
-    "files_present": [
-      "assets/icon.png",
-      "src/*.ts",
-      "fix_final.py",
-      "README.md",
-      "package.json",
-      "tsconfig.json"
-    ],
-    "file_count": 48
   }
 }

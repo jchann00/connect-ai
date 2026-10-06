@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": "monolog-001",
+      "title": "Ollama 코딩 모델(qwen2.5-coder:7b) 로컬 연결 및 코다리 테스트",
+      "description": "로컬 Ollama에서 qwen2.5-coder:7b 모델 풀링 및 코다리 에이전트의 코드 생성/검증 루프 동작 확인",
+      "owner": "agent",
+      "agentIds": ["developer"],
+      "createdAt": "2026-10-06T22:25:00+09:00",
+      "status": "in_progress",
+      "priority": "urgent"
+    },
+    {
+      "id": "monolog-002",
+      "title": "Monolog Studio 첫 번째 타깃 소프트웨어 MVP 아이데이션",
+      "description": "시장 수요와 1인 개발 가능성을 고려한 첫 번째 소프트웨어 프로덕트 기획서 작성",
+      "owner": "mixed",
+      "agentIds": ["ceo", "business", "developer"],
+      "createdAt": "2026-10-06T22:25:00+09:00",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": "monolog-003",
+      "title": "영숙 텔레그램 봇 토큰 연결 및 알림 채널 구성",
+      "description": "핸드폰 텔레그램을 통해 대표님(jcan)에게 개발 진척 및 일정 보고가 전송되도록 비서 연동",
+      "owner": "user",
+      "agentIds": ["secretary"],
+      "createdAt": "2026-10-06T22:25:00+09:00",
+      "status": "pending",
+      "priority": "normal"
+    }
+  ]
+}

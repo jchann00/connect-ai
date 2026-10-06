@@ -1,14 +1,15 @@
 {
   "name": "connect-ai-lab",
-  "displayName": "Connect AI — AI 1인 기업 · 나만의 에이전트 팀 · 제2의 두뇌",
-  "description": "AI 1인 기업가를 위한 워크스페이스. 나만의 AI 에이전트 팀과 제2의 두뇌가 한 곳에서 — CEO + 전문 에이전트들이 내 지식·결정 로그·메모리를 컨텍스트로 24시간 미션 향해 자동으로 일합니다. 100% 로컬·오프라인·무료.",
+  "displayName": "Monolog Studio — AI 1인 개발사 · 코다리 & 에이전트 팀",
+  "description": "Monolog Studio(대표: jcan) AI 1인 개발사를 위한 워크스페이스. 코다리(시니어 풀스택 엔지니어) + 기획/비즈니스 에이전트 군단이 24시간 자율 작동. 100% 로컬 Ollama 연동.",
   "version": "2.89.157",
-  "publisher": "connectailab",
+  "publisher": "jchann00",
+  "author": "jcan <jchann00@nate.com>",
   "license": "MIT",
   "icon": "assets/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wonseokjung/connect-ai"
+    "url": "https://github.com/jchann00/connect-ai"
   },
   "engines": {
     "vscode": "^1.80.0"

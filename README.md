@@ -1,106 +1,127 @@
 <p align="center">
-  <img src="assets/icon.png" width="120" alt="Connect AI Logo" />
+  <img src="assets/icon.png" width="120" alt="Monolog Studio Logo" />
 </p>
 
-<h1 align="center">Connect AI v2 (P-Reinforce)</h1>
+<h1 align="center">Monolog Studio — AI 1인 개발사 OS</h1>
 
 <p align="center">
-  <strong>100% Local · 100% Offline · Autonomous Knowledge Engine</strong><br/>
-  VS Code / Cursor 확장 프로그램으로, 당신의 낡은 IDE를 최상위 에이전트 대학(A.U)의 심장으로 진화시킵니다.
+  <strong>100% Local · 100% Offline · Autonomous Software Builder</strong><br/>
+  대표 <strong>jcan</strong>과 시니어 풀스택 엔지니어 <strong>코다리</strong>를 중심으로 구축된 자율형 1인 AI 소프트웨어 기업 워크스페이스입니다.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-2.1.30-blue" alt="version" />
+  <img src="https://img.shields.io/badge/Founder-jcan-blue" alt="founder" />
+  <img src="https://img.shields.io/badge/Studio-Monolog_Studio-purple" alt="studio" />
+  <img src="https://img.shields.io/badge/Lead_Engineer-코다리_(Senior_Fullstack)-cyan" alt="lead-engineer" />
+  <img src="https://img.shields.io/badge/Engine-Ollama_(qwen2.5--coder)-orange" alt="engine" />
   <img src="https://img.shields.io/badge/license-MIT-green" alt="license" />
-  <img src="https://img.shields.io/badge/integration-Agent_University-purple" alt="integration" />
-  <img src="https://img.shields.io/badge/engine-Ollama%20%7C%20LM%20Studio-orange" alt="engine" />
 </p>
 
 ---
 
-## 🌟 Overview: The P-Reinforce Architecture
+## 🌟 Overview: Monolog Studio Architecture
 
-Connect AI v2.1.30은 단순한 코딩 에이전트를 넘어섭니다. **P-Reinforce 아키텍처**를 기반으로 설계된 이 에이전트는 사용자의 모든 정보와 지시를 받아들여 **스스로 의미를 분석하고, 폴더를 생성하고, 마크다운 위키 파일로 정리하여 클라우드에 자동 백업**하는 자율 지식 정원사(Autonomous Gardener)입니다.
+Monolog Studio는 외부 클라우드 API 의존 및 월 구독료 없이, **100% 로컬 Ollama 신경망**을 통해 24시간 자율 구동되는 AI 1인 소프트웨어 개발사입니다.
 
----
-
-## ⚡ Core Features
-
-### 1. 🧠 Agent University (A.U) 완벽 연동
-Agent University 웹 플랫폼과 실시간으로 통신합니다. 
-웹에서 버튼 한 번 누르는 즉시, 로컬 VS Code의 `4825` 포트를 통해 프리미엄 브레인 팩(Premium Brain Pack) 지식이 로컬 인공지능 뇌(`~/.connect-ai-brain`)에 자동 주입되어 신경망을 확장합니다.
-
-### 2. 📂 자율 지식 구조화 (Zero-Interaction Styling)
-유저가 던져주는 원시 데이터(Raw Data)를 에이전트가 스스로 판단해 `10_Wiki`, `00_Raw`, `🚀 Skills` 와 같은 완벽한 P-Reinforce 템플릿 규격의 Markdown 파일로 분할-조립하여 저장합니다.
-
-### 3. ☁️ 클라우드 동기화 (Auto-Git Sync 100%)
-로컬 PC에서 파일 생성이 일어나는 순간, 에이전트가 스스로 GitHub 저장소에 `git add`, `commit`, `push`를 수행합니다. 
-마스터는 이제 지루한 푸시 커맨드를 입력할 필요가 없습니다.
-
-### 4. 🔗 설치형 모델 자동 감지 (Dynamic Model Detection)
-Ollama 또는 LM Studio에 설치된 모델을 내부 API(`v1/models`)를 호출하여 자동 감지하고, UI의 스위치 보드(드롭다운)에 연결합니다. 어떤 모델을 쓸지 번거롭게 입력하지 마십시오.
+- **대표자 (파운더):** `jcan`
+- **핵심 목표:** 고품질 SaaS 및 자동화 소프트웨어 빠른 런칭, 1인 무인화 개발 파이프라인 완성, MRR 창출
+- **기술 책임자:** `코다리` (시니어 풀스택 엔지니어)
 
 ---
 
-## ⚒️ Agent Capabilities (에이전트 권한)
+## 👥 Monolog Studio 에이전트 팀
 
-로컬 머신의 파일 시스템과 터미널에 대한 통제권을 인공지능에게 부여합니다. (100% 안전한 권한 승인 기반)
-
-| Action | Description |
-|:--|:--|
-| **📄 Create Files** | 새로운 파일과 폴더를 생성합니다 |
-| **✏️ Edit Files** | 기존 파일 내의 코드를 수정합니다 |
-| **🗑️ Delete Files** | 불필요한 파일을 즉각 파쇄합니다 |
-| **📖 Read Files** | 마스터의 프로젝트 파일을 읽어 맥락을 파악합니다 |
-| **📂 Browse Directories** | 디렉토리 구조를 분석합니다 |
-| **🖥️ Run Commands** | `npm run build`, `git push` 등 터미널 명령을 수행합니다 |
+| 에이전트 | 역할 | 전문 분야 | 주요 페르소나 및 특징 |
+|---|---|---|---|
+| 🧭 **CEO** | 총괄 디렉터 | 로드맵 수립, 전사 작업 분해, 의사결정 | 전체 프로젝트 방향 조율 및 마일스톤 관리 |
+| 💻 **코다리** | Lead Engineer | 시니어 풀스택 개발, 아키텍처, 자체 검증 | 클린 코드, TDD, 코드 리뷰, 버그 제로 원칙 |
+| 💼 **현빈** | Head of Business | SaaS BM, 가격 책정(Pricing), 시장 분석 | 수익화 전략, 전환율 설계, Lean MVP 검증 |
+| 📱 **영숙** | Executive Assistant | 일정/할 일 관리, 텔레그램 일일 보고 | 24시간 데일리 브리핑, 개발 진척 텔레그램 알림 |
+| 🎨 **Designer** | UI/UX Lead | 웹/앱 인터페이스, 디자인 시스템 | 현대적이고 세련된 사용자 경험 및 와이어프레임 |
+| ✍️ **Writer** | Copywriter | 기술 문서, 랜딩페이지 카피, 릴리즈 노트 | 명확하고 설득력 있는 제품 소개 및 문서화 |
+| 🔍 **Researcher** | Tech Researcher | 오픈소스 리서치, 최신 스택 분석 | 기술 트렌드 수집 및 API/라이브러리 검증 |
+| 📺 **레오** | Head of Media | 제품 쇼케이스/데모 영상, 유튜브 채널 | 제품 런칭 비디오 기획 및 튜토리얼 |
+| 🎵 **루나** | Sound Producer | 데모 BGM 생성, 사운드 디자인 | 제품 홍보 영상 및 데모 사운드트랙 작곡 |
+| 📷 **Instagram** | SNS Specialist | 빌드인퍼블릭, 개발 일지 릴스/스토리 | 1인 개발 과정 공유 및 브랜드 인지도 제고 |
 
 ---
 
-## 📥 Installation (설치 방법)
+## 📂 워크스페이스 코어 메모리 구조 (`_company/`)
 
-### A.U 멤버십 유저 (Recommended)
-1. 상단 탭의 [Releases](https://github.com/wonseokjung/connect-ai/releases) 메뉴로 진입.
-2. 최신 `v2.1.30.vsix` 파일을 다운로드.
-3. VS Code 에서 `Cmd+Shift+P` → **Extensions: Install from VSIX** → 다운받은 파일 선택
+모든 에이전트는 단일 진실의 원천(SSOT)인 `_company/` 디렉토리를 참조하여 일관성 있게 협업합니다.
 
-### 개발자 빌드 (Build from Source)
-```bash
-git clone https://github.com/wonseokjung/connect-ai.git
-cd connect-ai
-npm install
-npm run compile
-npx vsce package
+```
+_company/
+├── _shared/
+│   ├── identity.md         # Monolog Studio 정체성, 가치, 브랜드 톤앤매너
+│   ├── goals.md            # 장기(1년) 및 단기(1개월) 공동 목표
+│   ├── decisions.md        # 주요 기술/경영 의사결정 로그 (최우선 순위)
+│   ├── tracker.json        # 태스크 추적기 및 작업 큐
+│   ├── agent_models.json   # 에이전트별 최적 Ollama 모델 배정
+│   └── _system.md          # 1인 기업 OS 자가 매뉴얼
+├── _agents/                # 에이전트별 독립 작업 공간 (memory, prompt, config, skills)
+│   ├── developer/          # 코다리 (tools/ 포함)
+│   ├── ceo/
+│   ├── secretary/          # 영숙 (텔레그램 연동)
+│   └── ...
+├── sessions/               # 사이클 및 세션별 자동 산출물
+└── .gitignore              # 시크릿(API 키, 텔레그램 토큰) 자동 보호
 ```
 
 ---
 
-## ⚙️ Engine Setup (엔진 설정 방법)
+## ⚡ Ollama 로컬 모델 설정 가이드
 
-### ✅ LM Studio (Apple Silicon, Windows) - 권장
-1. [lmstudio.ai](https://lmstudio.ai/) 에서 설치
-2. Gemma 3, Llama 3 또는 Qwen Coder 등 원하는 모델 로드
-3. **Developer 탭(좌측 `<>` 메뉴)** 진입 후 **Start Server** 클릭
-4. Connect AI의 ⚙️ 채팅방 설정에서 엔진을 "LM Studio"로 선택 (자동 모델 인덱싱 완료)
+Monolog Studio는 로컬 오픈소스 LLM을 기본 엔진으로 사용합니다.
 
-### ✅ Ollama (Mac, Linux)
-```bash
-brew install ollama
-ollama pull gemma3   # 원하는 모델 풀링
+### 1. 추천 Ollama 모델 다운로드 (PowerShell)
+```powershell
+# 코다리 전용 코딩 모델 (강력 추천)
+ollama pull qwen2.5-coder:7b
+
+# CEO 및 기획/비서용 범용 모델
+ollama pull qwen2.5:7b
+# 또는
+ollama pull llama3.1:8b
 ```
-Connect AI에서 설정만 "Ollama"로 바꿔주시면 끝납니다.
+
+### 2. 설정 확인
+VS Code 설정(`settings.json`):
+```json
+{
+  "connectAiLab.ollamaUrl": "http://127.0.0.1:11434",
+  "connectAiLab.defaultModel": "qwen2.5-coder:7b"
+}
+```
 
 ---
 
-## 🔒 Privacy (완벽한 보안)
+## 📱 텔레그램 비서(영숙) 연동 (5분 셋업)
 
-- **Zero Cloud API:** 당신의 코드는 외부 클라우드 통신망을 타지 않습니다.
-- **Zero Telemetry:** 모든 연산력은 100% Local Inference 환경에서 이루어집니다.
-- 기업 보안 등급에 준하는 극강의 밀폐형 로컬 지식망 생성을 보장합니다.
+1. 스마트폰 텔레그램에서 **[@BotFather](https://t.me/BotFather)** 접속 → `/newbot` 실행 후 봇 생성
+2. 발급받은 **Bot Token** 복사
+3. 생성된 봇에게 아무 메시지나 전송 (`/start` 등)
+4. VS Code 명령 팔레트(`Ctrl+Shift+P`) → **Connect AI** 사이드바에서 **비서(Secretary)** 설정 카드 선택 후 토큰 입력
+5. 모바일 텔레그램으로 개발 진척 및 데일리 브리핑 수신 완료!
+
+---
+
+## 🛠️ 개발 및 빌드 (Developer Build)
+
+```powershell
+# 의존성 설치
+npm.cmd install
+
+# 확장 프로그램 컴파일
+npm.cmd run compile
+
+# VSIX 패키징
+npx.cmd vsce package --no-dependencies
+```
 
 ---
 
 <p align="center">
-  <strong>Built for Antigravity & Agent University</strong><br/>
-  Designed by <a href="https://github.com/wonseokjung">Jay</a> × Connect AI Architect
+  <strong>Monolog Studio</strong> · Designed for <strong>jcan</strong><br/>
+  Powered by Connect AI & Local Open-Source Intelligence
 </p>
