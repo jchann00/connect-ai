@@ -5,6 +5,11 @@ Input: just YOUTUBE_API_KEY + MY_CHANNEL_ID/HANDLE from youtube_account.json.
 No additional config needed. Output: full report with stats, patterns, and
 data-driven recommendations.
 """
+import sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', line_buffering=True)
 import os, json, sys, time, datetime, statistics, re
 from collections import Counter
 
