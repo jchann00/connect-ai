@@ -143,11 +143,12 @@ def check_channel_connection():
         print(f"❌ YouTube API 호출 에러: {e}")
         return None
 
-def upload_video(file_path, title, description, tags=None, category_id="22", privacy_status="private"):
+def upload_video(file_path, title, description, tags=None, category_id="22", privacy_status="private", publish_at=None):
     """
     비디오 파일을 유튜브에 업로드하고 식별 정보를 반환합니다.
-    - category_id: 22 (People & Blogs), 24 (Entertainment), 10 (Music), 28 (Science & Technology)
+    - category_id: 22 (People & Blogs), 24 (Entertainment), 15 (Pets & Animals), 28 (Science & Technology)
     - privacy_status: 'private', 'unlisted', 'public'
+    - publish_at: ISO 8601 UTC 문자열 (예: '2026-10-10T00:00:00Z'). 설정 시 자동으로 private로 업로드 후 해당 시각에 public 공개.
     """
     if not os.path.exists(file_path):
         print(f"❌ 업로드할 파일이 존재하지 않습니다: {file_path}")
@@ -160,6 +161,13 @@ def upload_video(file_path, title, description, tags=None, category_id="22", pri
     if tags is None:
         tags = []
 
+    status_obj = {
+        "privacyStatus": "private" if publish_at else privacy_status,
+        "selfDeclaredMadeForKids": False
+    }
+    if publish_at:
+        status_obj["publishAt"] = publish_at
+
     body = {
         "snippet": {
             "title": title,
@@ -167,13 +175,13 @@ def upload_video(file_path, title, description, tags=None, category_id="22", pri
             "tags": tags,
             "categoryId": category_id
         },
-        "status": {
-            "privacyStatus": privacy_status,
-            "selfDeclaredMadeForKids": False
-        }
+        "status": status_obj
     }
 
-    print(f"\n🚀 [영상 업로드 시작] '{title}' (상태: {privacy_status})")
+    if publish_at:
+        print(f"\n🚀 [영상 예약 업로드 시작] '{title}' (예약 공개 일시: {publish_at})")
+    else:
+        print(f"\n🚀 [영상 업로드 시작] '{title}' (상태: {privacy_status})")
     media = MediaFileUpload(
         file_path,
         mimetype="video/*",
