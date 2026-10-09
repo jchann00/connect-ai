@@ -1,0 +1,30 @@
+# Environment variables & API keys
+.env
+.env.local
+.env.*.local
+
+# Google OAuth & YouTube Credentials (보안 중요)
+client_secret.json
+client_secrets.json
+.agent/memory/youtube_token.json
+token.json
+*.pickle
+
+# Python cache & virtualenv
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Large Video Output Assets (Git 용량 제한 방지 - 이미지는 포함)
+output_assets/*.mp4
+output_assets/*.webm
+
+# IDE & OS temporary files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
