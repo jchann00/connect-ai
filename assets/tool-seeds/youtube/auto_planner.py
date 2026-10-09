@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Auto Planner — runs trend_sniper.py on a fixed interval for a chosen
 duration (e.g. overnight). Reads its config from auto_planner.json."""
+import sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', line_buffering=True)
 import os, json, time, datetime, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))

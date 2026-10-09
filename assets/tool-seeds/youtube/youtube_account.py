@@ -7,6 +7,11 @@ channels, etc. — and every other tool will read from here.
 
 Running it just prints a sanity-check report so you can confirm the values
 are loaded correctly (without leaking the full API key)."""
+import sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', line_buffering=True)
 import os, json, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))

@@ -6,6 +6,11 @@ brief: what should YOU do next, given what's working for them.
 
 Reads youtube_account.json (api key, competitors, ollama, model) and
 competitor_brief.json (volume)."""
+import sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', line_buffering=True)
 import os, json, sys, time, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))

@@ -9,6 +9,11 @@ trend_sniper.json. If a key exists in both, trend_sniper.json wins.
 
 Requires:  pip install google-api-python-client requests
 """
+import sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', line_buffering=True)
 import os, json, time, random, datetime, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))

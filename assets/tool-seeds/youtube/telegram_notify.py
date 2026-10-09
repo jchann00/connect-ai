@@ -9,6 +9,11 @@ Two modes:
 telegram_v3 — Secretary's tools/telegram_setup.json is the canonical
 UI-managed home (input via Skills ⚙️). Falls back to legacy config.md
 and finally to youtube_account.json so older setups keep working."""
+import sys
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', line_buffering=True)
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', line_buffering=True)
 import os, json, sys, time, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
